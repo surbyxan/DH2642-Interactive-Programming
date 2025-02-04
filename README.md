@@ -1,6 +1,6 @@
-# ememo-eveberg-gidehag-malandre-HT24-Project
+This is a CO-developed application done for the DH2642 course at KTH. I developed the skincare parts of the application, as well as the API configuration. I CO-developed most of the application.
 
-ememo-eveberg-gidehag-malandre-HT24-Project created for ememo-eveberg-gidehag-malandre
+This project was done by: Emelie Olers, Evelina Berg, Henrietta Gidehag, Malin Andreasson
 
 About the project:
 
@@ -26,7 +26,5 @@ work with the API call. All of them have different code within them, but all wor
 firebaseConfig.js is the initial configuration of firebase and firebaseModel.js is where the
 connection to firebases is done aswell as persistance. Lastly, the styling for all the views
 is located in style.css.
-
-How to set up the app:
 
 There is a working site that has been deployed at: https://weatherglow-9a93d.web.app/#/
