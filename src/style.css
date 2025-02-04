@@ -1,0 +1,1047 @@
+html, body {
+	height: 100%; 
+	margin:0;
+	
+  }
+
+/* *****	SELECT CITY	*******/
+.selectCity {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+#myVideo {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.Citybody {
+    position: relative; 
+    z-index: 1; 
+    background: rgba(0, 0, 0, 0.5); 
+    border: 2px solid black; 
+    padding: 20px 40px; 
+    border-radius: 8px;
+    text-align: center; 
+	align-items: center;
+    color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+	width: 20%;
+}
+
+.cityheader {
+	font-family: "cinzel decorative";
+	text-align: center;
+}
+
+.enterCityButton {
+	border-radius: 7px;
+	background-color: #ffffff;	
+	border: 1.5px solid #5e4496;
+
+}
+.enterCityButton:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+	background-color: #ffffff;
+}
+.enterCityButton:active {
+	box-shadow: 0 5px #7b7b7b;
+	transform: translateY(4px);
+  }
+
+.SelectCitytextBox{
+	border-radius: 7px;
+	border: 1.5px solid #5e4496;
+}
+.SelectCitytextBox:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+}
+
+/** Login page **/
+
+.loginContainer {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+  
+.leftSide {
+	width: 40%; 
+	height: 100vh; 
+	background-image: linear-gradient(rgb(210, 92, 210), rgb(109, 109, 239)); 
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center; 
+}
+
+.welcome {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+  
+
+.frontImageContainer {
+	width: 150px; 
+	height: 150px; 
+	overflow: hidden; 
+	border-radius: 50%; 
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+}
+  
+.frontImage {
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover; 
+}
+
+.rightSide {
+	width: 60%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: white;
+	flex-direction: column;
+	position: relative;
+}
+
+@media (max-width: 600px) {
+    .loginContainer {
+        flex-direction: column; 
+        height: 100vh;
+    }
+
+    .leftSide, .rightSide {
+        width: 100%; 
+        height: 50%;
+    }
+}
+
+.appdescription{
+	font-style: italic;
+	border-radius: 10px;
+	border: solid 2px black;
+	padding: 0px 15px 0px 15px;
+	flex-direction: column;
+	bottom: 0;
+	display: flex;
+  	position: absolute;
+	background-color: whitesmoke;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+	
+}
+
+.pleaseLogIn {
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(70, 69, 69);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.loginButtonandTextBox{
+	width: 60%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.loginTextBoxes {
+	width: 100%;
+	padding:5px;
+	margin:3px;
+	border-radius: 7px;
+}
+
+.loginTextBoxes:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+}
+
+
+
+.loginButton {
+	align-items: center;
+	width: 100%;
+	padding:5px;
+	margin:3px;
+	border-radius: 7px;
+	background-color: rgb(210, 92, 210);
+	color: white;
+	font-weight: bold;
+}
+
+.loginButton:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+	background-color: rgb(137, 58, 137);
+	
+}
+.loginGuestButton {
+	align-items: center;
+	width: 100%;
+	padding:5px;
+	margin:3px;
+	border-radius: 7px;
+	background-color: rgb(109, 109, 239);
+	color: white;
+	font-weight: bold;
+	
+}
+.loginGuestButton:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+	background-color: rgb(73, 73, 192);
+}
+
+.loginGuestButton:active{
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.loginButton:active {
+
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.registerLink{
+	font-style: italic;
+	margin-top: 3px;
+	text-align: center;
+}
+
+
+/**MAIN PAGE MERGE**/
+
+/** SKINCARE VIEW **/
+.SkinCareView{
+	display: flex;
+	flex-direction:column;
+	width: 100%;
+	padding: 0px 20px 0px 20px;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	height: 50%;
+	
+}
+
+.skincareHeader{
+	height: 40px;
+	margin: 5px 0px 0px 25px;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+@media(min-width:560px){
+.skincare{
+	padding:1% 0 0 2%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: stretch;
+	
+}
+.skincarefacts{
+	padding: 17px;
+	margin: 0px 2px 0px 2px;
+	width: 20%;
+}
+}
+
+@media(max-width:559px){
+	.skincare{
+		padding:2% 0 0 2%;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: stretch;
+		height: inherit;
+	}
+	.skincarefacts{
+		padding: 17px;
+		margin: 0px 2px 0px 2px;
+		width: 70%;
+	}
+}
+/**MAIN PAGE**/
+.mainbody {
+	
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+	align-items: stretch; 
+	width: 100%; 
+	height: 94%;
+}
+/**  WEATHER VIEW **/
+
+.weatherViewBody {
+	position: relative;
+	display: flex;
+  	flex-direction: row;
+	width: 100%;
+	height: 55%;
+	
+}
+
+.weatherViewImage {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.weatherbox{
+	position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    padding: 1%; 
+    border-radius: 8px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    top: 10%; 
+    left: 5%;
+    width: 40%; 
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 80%; 
+	overflow-y: auto;
+}
+
+.weatherCity {
+	display: flex;
+	justify-content: flex-start;  
+	align-items: center;  
+	margin: 10px 25px;
+}
+  
+.weatherDetails {
+	margin-left: 50px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+	color: white;
+}
+
+.weatherIcon {
+display: flex;  
+align-items: center;  
+margin-left: 10px; 
+align-items: center;   
+}
+
+/* ***** ABOUT US **** */
+
+.aboutusContainer {
+	
+	width: 100%;
+	height: 95%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.niceToMeetYouHeader{
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	margin: 0 0 0 5%;
+	color: white;
+}
+
+.aboutUsContent { 
+	display: flex;
+	flex-direction: row;
+	margin: 2% 0 0 0;
+}
+
+.PictureBoxAU{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 0 15% 0 0;
+}
+.aboutusBox{ 
+	background-image: linear-gradient(rgb(210, 92, 210), rgb(109, 109, 239));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	border-radius: 8px;
+	width: 100%;
+	box-shadow: 0 4px 8px rgb(43, 42, 42);
+	margin: 20px 0 20px 0;
+}
+
+.welcomeHeader{
+	color: black;
+	align-items: center;
+}
+
+.aboutUsImages{
+		margin-top:5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		width: 100%;
+}
+
+.personalImageContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px;
+	gap: 10px; 
+	position: relative;
+	color: white;
+}
+
+
+.personalImage{
+	max-width: 120px;
+    height: auto;
+    border: 1px solid #36454F;
+    border-radius: 50%;
+}
+
+	
+.descriptionWebsite{
+	margin: 0 10% 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 50%;
+}
+
+.textaboutUs{
+	background-color: rgb(250, 170, 222);
+	color: white;
+    box-shadow: 0 4px 8px rgb(150, 70, 122); 
+	font-size: 17px;
+	border-radius: 7px;
+	max-width: 50%; 
+	padding: 20px;
+	text-align: center;
+	
+
+	
+
+}
+.skincareProducts{
+	margin-top: 10px;
+	max-width: 300px;
+	height: auto;
+}
+
+  /** SIDEBAR VIEW **/
+  .sideBarBody {
+    width: 100vw;
+    height: 30px;
+    border-style: solid;
+    background-image: linear-gradient(rgb(210, 92, 210), rgb(109, 109, 239));
+    display: flex;
+    justify-content: center;
+  }
+
+  .nickname{
+	color: white;
+	margin-top: 5px;
+	position:absolute;
+    left: 30px;
+	font-style: italic;
+    font-family: "Georgia", serif;
+
+  }
+  
+  .sidebarLinkContainer {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .sidebarLink {
+    color: white;
+    margin-right: 20px;
+    margin-top: 5px;
+	margin-left: 20px;
+  }
+  
+  .sidebarLink:hover {
+    transform: scale(1.05);
+  }
+  
+  .sidebarLogout {
+    position:absolute;
+    right: 20px;
+    padding:5px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+
+.sidebarLogout:hover {
+    transform: scale(1.05);
+}
+
+.noDataText, .tryAgain{
+	border-radius: 7px;
+	background-color: #ffffff;	
+	border: 1.5px solid #d1369b;
+	padding: 10px;
+}
+
+.noDataText:hover, .tryAgain:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	transform: scale(1.005);
+	background-color: #ffffff;
+}
+
+.notFound, .notAvailable {
+
+}
+
+.pleaseCheck, .pleaseTryAgain {
+
+}
+
+.errorMessage, .noDataMessage {
+	text-align: center;
+	
+}
+  
+/* CREATE ACCOUNT */
+
+.createAccountContainer{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(210, 92, 210), rgb(109, 109, 239));
+}
+
+.createAccountBox{
+	display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid black; 
+    border-radius: 8px; 
+    background-color: white; 
+    width: 35%;
+	align-items: center;
+}
+
+/** LOADING THING**/
+/* From Uiverse.io by zanina-yassine */ 
+.loadingContainer {
+	width: 250px;
+	height: 250px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .cloud {
+	width: 250px;
+  }
+  
+  .front {
+	padding-top: 45px;
+	margin-left: 25px;
+	display: inline;
+	position: absolute;
+	z-index: 11;
+	animation: clouds 8s infinite;
+	animation-timing-function: ease-in-out;
+  }
+  
+  .back {
+	margin-top: -30px;
+	margin-left: 150px;
+	z-index: 12;
+	animation: clouds 12s infinite;
+	animation-timing-function: ease-in-out;
+  }
+  
+  .right-front {
+	width: 45px;
+	height: 45px;
+	border-radius: 50% 50% 50% 0%;
+	background-color: #4c9beb;
+	display: inline-block;
+	margin-left: -25px;
+	z-index: 5;
+  }
+  
+  .left-front {
+	width: 65px;
+	height: 65px;
+	border-radius: 50% 50% 0% 50%;
+	background-color: #4c9beb;
+	display: inline-block;
+	z-index: 5;
+  }
+  
+  .right-back {
+	width: 50px;
+	height: 50px;
+	border-radius: 50% 50% 50% 0%;
+	background-color: #4c9beb;
+	display: inline-block;
+	margin-left: -20px;
+	z-index: 5;
+  }
+  
+  .left-back {
+	width: 30px;
+	height: 30px;
+	border-radius: 50% 50% 0% 50%;
+	background-color: #4c9beb;
+	display: inline-block;
+	z-index: 5;
+  }
+  
+  .sun {
+	width: 120px;
+	height: 120px;
+	background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+	background: linear-gradient(to right, #fcbb04, #fffc00);
+	border-radius: 60px;
+	display: inline;
+	position: absolute;
+  }
+  
+  .sunshine {
+	animation: sunshines 2s infinite;
+  }
+  
+  @keyframes sunshines {
+	0% {
+	  transform: scale(1);
+	  opacity: 0.6;
+	}
+  
+	100% {
+	  transform: scale(1.4);
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes clouds {
+	0% {
+	  transform: translateX(15px);
+	}
+  
+	50% {
+	  transform: translateX(0px);
+	}
+  
+	100% {
+	  transform: translateX(15px);
+	}
+  }
+  
+  .loadingText{
+	margin-top: 20px; 
+	text-align: center;
+	font-size: 1.2em;
+	color: #333;
+  }
+
+  .loadingBox{
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center; 
+	height: 100vh;
+}
+/**THIRD PARTY CARD SKINCARE VIEW**/
+/* From Uiverse.io by kennyotsu */ 
+/*works janky on mobile :<*/
+.container {
+	position: relative;
+	width: 190px;
+	height: 254px;
+	transition: 200ms;
+	margin: 0 15% 0 15%;
+	text-align: center;
+	align-items: top;
+	transform: rotate(90deg);
+  }
+  
+  .container:active {
+	width: 180px;
+	height: 245px;
+  }
+  
+  #card {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	transition: 700ms;
+	background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  }
+  
+  .subtitle {
+	transform: translateX(-104px) rotate(-90deg);
+	color: rgb(134, 110, 221);
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	
+  }
+  
+  .title {
+	opacity: 0;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out-out;
+	transition-delay: 100ms;
+	position: absolute;
+	/*font-weight: bold;*/
+	color: white;
+	font-size: medium;
+	transform: rotate(-90deg);
+  }
+  
+  .tracker:hover ~ #card .title {
+	opacity: 1;
+  }
+  
+  #prompt {
+	/*bottom: 45px;*/
+	/*left: 12px;*/
+	z-index: 20;
+	font-size: 15px;
+	/*font-weight: bold;*/
+	transition: 300ms ease-in-out-out;
+	position: absolute;
+	/*max-width: 143px;*/
+	color: rgb(255, 255, 255);
+	transform: rotate(-90deg);
+  }
+  
+  .tracker {
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .tracker:hover {
+	cursor: pointer;
+  }
+  
+  .tracker:hover ~ #card #prompt {
+	opacity: 0;
+  }
+  
+  .tracker:hover ~ #card {
+	transition: 300ms;
+	filter: brightness(1.1);
+  }
+  
+  .container:hover #card::before {
+	transition: 200ms;
+	content: '';
+	opacity: 80%;
+  }
+  
+  .canvas {
+	perspective: 800px;
+	inset: 0;
+	z-index: 200;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: "tr-1 tr-2 tr-3 tr-4 tr-5"
+	  "tr-6 tr-7 tr-8 tr-9 tr-10"
+	  "tr-11 tr-12 tr-13 tr-14 tr-15"
+	  "tr-16 tr-17 tr-18 tr-19 tr-20"
+	  "tr-21 tr-22 tr-23 tr-24 tr-25";
+  }
+  
+  #card::before {
+	content: '';
+	background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+	filter: blur(2rem);
+	opacity: 30%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	transition: 200ms;
+  }
+  
+  .tr-1 {
+	grid-area: tr-1;
+  }
+  
+  .tr-2 {
+	grid-area: tr-2;
+  }
+  
+  .tr-3 {
+	grid-area: tr-3;
+  }
+  
+  .tr-4 {
+	grid-area: tr-4;
+  }
+  
+  .tr-5 {
+	grid-area: tr-5;
+  }
+  
+  .tr-6 {
+	grid-area: tr-6;
+  }
+  
+  .tr-7 {
+	grid-area: tr-7;
+  }
+  
+  .tr-8 {
+	grid-area: tr-8;
+  }
+  
+  .tr-9 {
+	grid-area: tr-9;
+  }
+  
+  .tr-10 {
+	grid-area: tr-10;
+  }
+  
+  .tr-11 {
+	grid-area: tr-11;
+  }
+  
+  .tr-12 {
+	grid-area: tr-12;
+  }
+  
+  .tr-13 {
+	grid-area: tr-13;
+  }
+  
+  .tr-14 {
+	grid-area: tr-14;
+  }
+  
+  .tr-15 {
+	grid-area: tr-15;
+  }
+  
+  .tr-16 {
+	grid-area: tr-16;
+  }
+  
+  .tr-17 {
+	grid-area: tr-17;
+  }
+  
+  .tr-18 {
+	grid-area: tr-18;
+  }
+  
+  .tr-19 {
+	grid-area: tr-19;
+  }
+  
+  .tr-20 {
+	grid-area: tr-20;
+  }
+  
+  .tr-21 {
+	grid-area: tr-21;
+  }
+  
+  .tr-22 {
+	grid-area: tr-22;
+  }
+  
+  .tr-23 {
+	grid-area: tr-23;
+  }
+  
+  .tr-24 {
+	grid-area: tr-24;
+  }
+  
+  .tr-25 {
+	grid-area: tr-25;
+  }
+  
+  .tr-1:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-2:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-3:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-4:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-5:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-6:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-7:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-8:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-9:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-10:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-11:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-12:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-13:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-14:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-15:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-16:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-17:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-18:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-19:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-20:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .tr-21:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+  }
+  
+  .tr-22:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+  }
+  
+  .tr-23:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+  }
+  
+  .tr-24:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+  }
+  
+  .tr-25:hover ~ #card {
+	transition: 125ms ease-in-out;
+	transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+  }
+  
+  .noselect {
+	-webkit-touch-callout: none;
+	 /* iOS Safari */
+	-webkit-user-select: none;
+	 /* Safari */
+	 /* Konqueror HTML */
+	-moz-user-select: none;
+	 /* Old versions of Firefox */
+	-ms-user-select: none;
+	 /* Internet Explorer/Edge */
+	user-select: none;
+	 /* Non-prefixed version, currently
+	 supported by Chrome, Edge, Opera and Firefox */
+  }
